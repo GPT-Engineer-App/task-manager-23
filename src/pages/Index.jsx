@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, VStack, HStack, Input, Button, IconButton, Text, Checkbox, Box } from "@chakra-ui/react";
+import { Container, VStack, HStack, Input, Button, IconButton, Text, Checkbox, Box, Image } from "@chakra-ui/react";
 import { FaTrash } from "react-icons/fa";
 
 const Index = () => {
@@ -25,6 +25,7 @@ const Index = () => {
 
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+      <Image src="https://via.placeholder.com/150" alt="Car Image" mb={4} />
       <VStack spacing={4} width="100%">
         <HStack width="100%">
           <Input placeholder="Add a new task" value={task} onChange={(e) => setTask(e.target.value)} />
